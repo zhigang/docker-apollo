@@ -20,7 +20,7 @@ ENV APOLLO_PORTAL_SERVICE_NAME="service-apollo-portal-server.sre"
 
 ENV APOLLO_VERSION 1.7.1
 
-RUN cd /apollo-admin-server && \
+RUN cd /apollo-portal-server && \
     wget https://github.com/ctripcorp/apollo/releases/download/v${APOLLO_VERSION}/apollo-portal-${APOLLO_VERSION}-github.zip && \
     unzip apollo-portal-1.7.1-github.zip "apollo-portal-${APOLLO_VERSION}.jar" && \
     rm -rf apollo-portal-${APOLLO_VERSION}-github.zip

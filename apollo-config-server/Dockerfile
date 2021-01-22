@@ -20,7 +20,7 @@ ENV APOLLO_CONFIG_SERVICE_NAME="service-apollo-config-server.sre"
 
 ENV APOLLO_VERSION 1.7.1
 
-RUN cd /apollo-admin-server && \
+RUN cd /apollo-config-server && \
     wget https://github.com/ctripcorp/apollo/releases/download/v${APOLLO_VERSION}/apollo-configservice-${APOLLO_VERSION}-github.zip && \
     unzip apollo-configservice-1.7.1-github.zip "apollo-configservice-${APOLLO_VERSION}.jar" && \
     rm -rf apollo-configservice-${APOLLO_VERSION}-github.zip
