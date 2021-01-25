@@ -6,12 +6,12 @@ Learn more at: <https://github.com/ctripcorp/apollo>
 
 ## Docker Pull Command
 
-`docker pull siriuszg/apollo-config-service:TAG`
+`docker pull siriuszg/apollo-config-server:TAG`
 
-`docker pull siriuszg/apollo-admin-service:TAG`
+`docker pull siriuszg/apollo-admin-server:TAG`
 
-`docker pull siriuszg/apollo-portal:TAG`
+`docker pull siriuszg/apollo-portal-server:TAG`
 
 ## TAG
 
-* 1.7.1, latest
+* v1.7.1, latest
