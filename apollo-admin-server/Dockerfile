@@ -23,6 +23,7 @@ ENV APOLLO_VERSION 1.7.1
 RUN cd /apollo-admin-server && \
     wget https://github.com/ctripcorp/apollo/releases/download/v${APOLLO_VERSION}/apollo-adminservice-${APOLLO_VERSION}-github.zip && \
     unzip apollo-adminservice-1.7.1-github.zip "apollo-adminservice-${APOLLO_VERSION}.jar" && \
+    mv "apollo-adminservice-${APOLLO_VERSION}.jar" "apollo-adminservice.jar" && \
     rm -rf apollo-adminservice-${APOLLO_VERSION}-github.zip
 
 EXPOSE 8090

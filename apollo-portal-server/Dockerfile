@@ -23,6 +23,7 @@ ENV APOLLO_VERSION 1.7.1
 RUN cd /apollo-portal-server && \
     wget https://github.com/ctripcorp/apollo/releases/download/v${APOLLO_VERSION}/apollo-portal-${APOLLO_VERSION}-github.zip && \
     unzip apollo-portal-1.7.1-github.zip "apollo-portal-${APOLLO_VERSION}.jar" && \
+    mv "apollo-portal-${APOLLO_VERSION}.jar" "apollo-portal.jar" && \
     rm -rf apollo-portal-${APOLLO_VERSION}-github.zip
 
 EXPOSE 8070

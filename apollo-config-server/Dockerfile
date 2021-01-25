@@ -23,6 +23,7 @@ ENV APOLLO_VERSION 1.7.1
 RUN cd /apollo-config-server && \
     wget https://github.com/ctripcorp/apollo/releases/download/v${APOLLO_VERSION}/apollo-configservice-${APOLLO_VERSION}-github.zip && \
     unzip apollo-configservice-1.7.1-github.zip "apollo-configservice-${APOLLO_VERSION}.jar" && \
+    mv "apollo-configservice-${APOLLO_VERSION}.jar" "apollo-configservice.jar" && \
     rm -rf apollo-configservice-${APOLLO_VERSION}-github.zip
 
 EXPOSE 8080
